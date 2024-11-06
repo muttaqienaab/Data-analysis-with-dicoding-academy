@@ -121,7 +121,7 @@ fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
  
 colors = ["#90CAF9", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
  
-sns.barplot(x="quantity", y="product_name", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
+sns.barplot(x="quantity_x", y="product_name", data=sum_order_items_df.head(5), palette=colors, ax=ax[0])
 ax[0].set_ylabel(None)
 ax[0].set_xlabel("Number of Sales", fontsize=30)
 ax[0].set_title("Best Performing Product", loc="center", fontsize=50)
